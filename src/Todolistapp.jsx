@@ -15,9 +15,9 @@ const Todo = () => {
         }
         else{
             setTask([...task,input])
+            setInput("");
         }
     }
-    console.log(task);
 
     let handleDelete = (x)=>{
         let updatedArray = task.filter((value,index)=> x!==index)
